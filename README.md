@@ -78,6 +78,8 @@ docker-compose.yml
 | `JWT_SECRET_KEY` | JWT 签名密钥 | `please-change-this-secret` |
 | `FRONTEND_PORT` | 前端端口 | `38401` |
 | `BACKEND_PORT` | 后端端口 | `38501` |
+| `POSTGRES_PORT` | PostgreSQL 宿主机端口 | `54321` |
+| `REDIS_PORT` | Redis 宿主机端口 | `63791` |
 
 ## 共享枚举使用位置
 

@@ -14,9 +14,9 @@
         <el-option label="高级" :value="CourseLevel.ADVANCED" />
       </el-select>
       <el-radio-group v-model="query.sort">
-        <el-radio-button label="latest">最新</el-radio-button>
-        <el-radio-button label="hot">最热</el-radio-button>
-        <el-radio-button label="rating">评分</el-radio-button>
+        <el-radio-button value="latest">最新</el-radio-button>
+        <el-radio-button value="hot">最热</el-radio-button>
+        <el-radio-button value="rating">评分</el-radio-button>
       </el-radio-group>
       <el-button type="primary" @click="load">应用筛选</el-button>
     </aside>

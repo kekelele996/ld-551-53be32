@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-eduflow}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-eduflow}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "${POSTGRES_PORT:-54321}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./database/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
@@ -24,7 +24,7 @@ services:
     image: redis:7-alpine
     container_name: ${COMPOSE_PROJECT_NAME:-ldeduflow}-redis
     ports:
-      - "${REDIS_PORT:-6379}:6379"
+      - "${REDIS_PORT:-63791}:6379"
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s

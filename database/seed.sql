@@ -1,7 +1,7 @@
 INSERT INTO users (id, email, name, hashed_password, role, bio) VALUES
-  (1, 'admin@eduflow.example.com', '平台管理员', '$2b$12$ge3MYV.hYgu8hQJmq8wOBeea1AR78qwl5v2Iu0vM0Wbq4XihWwvz.', 'ADMIN', '负责课程审核与平台运营'),
-  (2, 'instructor@eduflow.example.com', '林老师', '$2b$12$ge3MYV.hYgu8hQJmq8wOBeea1AR78qwl5v2Iu0vM0Wbq4XihWwvz.', 'INSTRUCTOR', '十年全栈开发与教学经验'),
-  (3, 'student@eduflow.example.com', '体验学员', '$2b$12$ge3MYV.hYgu8hQJmq8wOBeea1AR78qwl5v2Iu0vM0Wbq4XihWwvz.', 'STUDENT', '正在学习 Vue 与 FastAPI')
+  (1, 'admin@eduflow.example.com', '平台管理员', '$2a$12$uXW/0qc.ZntzytbhEbVTmeZcnwlQugDgbcig.FUyhnoNRCrtGXLHC', 'ADMIN', '负责课程审核与平台运营'),
+  (2, 'instructor@eduflow.example.com', '林老师', '$2a$12$uXW/0qc.ZntzytbhEbVTmeZcnwlQugDgbcig.FUyhnoNRCrtGXLHC', 'INSTRUCTOR', '十年全栈开发与教学经验'),
+  (3, 'student@eduflow.example.com', '体验学员', '$2a$12$uXW/0qc.ZntzytbhEbVTmeZcnwlQugDgbcig.FUyhnoNRCrtGXLHC', 'STUDENT', '正在学习 Vue 与 FastAPI')
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO courses (id, title, description, instructor_id, category, level, price, cover_image, total_lessons, total_duration, status, rating, student_count) VALUES
